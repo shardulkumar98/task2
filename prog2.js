@@ -7,9 +7,9 @@ for(let i = 0; i < 2; i++)
     for(let j = 0; j < 2; j++)
     {
         c[i][j] = 0;
-        for(let k = 0; k < y; k++)
+        for(let k = 0; k < 2; k++)
         {
-            c[i][j] = c[i][j] + a[i][k] * b[k][j]
+            c[i][j] += a[i][k] * b[k][j]
         }
     }
 }
