@@ -1,23 +1,16 @@
-// Matrix Multip;ication
-function multiplyMatrices(m1, m2) {
-    var result = [];
-    for (var i = 0; i < m1.length; i++) {
-        result[i] = [];
-        for (var j = 0; j < m2[0].length; j++) {
-            var sum = 0;
-            for (var k = 0; k < m1[0].length; k++) {
-                sum += m1[i][k] * m2[k][j];
-            }
-            result[i][j] = sum;
+// Matrix Multiplication
+const a = [[1,2], [3,4]]
+const b = [[1,4], [2,7]]
+const c = [[],[]]
+for(let i = 0; i < 2; i++)
+{
+    for(let j = 0; j < 2; j++)
+    {
+        c[i][j] = 0;
+        for(let k = 0; k < y; k++)
+        {
+            c[i][j] = c[i][j] + a[i][k] * b[k][j]
         }
     }
-    return result;
 }
-
-var m1 = [[1,2],[3,4]]
-var m2 = [[5,6],[7,8]]
-
-var mResult = multiplyMatrices(m1, m2)
-
-
-console.table(mResult) 
+console.log(c)
