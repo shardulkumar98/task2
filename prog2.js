@@ -1,6 +1,6 @@
 // Matrix Multiplication
-const a = [[1,2], [3,4]]
-const b = [[1,4], [2,7]]
+const a = [[1,1], [3,2]]
+const b = [[1,2], [2,7]]
 const c = [[],[]]
 for(let i = 0; i < 2; i++)
 {
